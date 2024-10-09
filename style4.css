@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/background.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 覆盖整个页面 */
+    background-position: center; /* 将图片置于页面中心 */
+    background-attachment: fixed; /* 固定背景图，内容滚动时背景不动 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color:none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.quote-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: auto;
+}
+
+.quote {
+    font-size: 24px;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+    color: #333;
+    quotes: "“" "”" "‘" "’";
+}
+
+.quote::before {
+    content: open-quote;
+    font-size: 3em;
+    line-height: .1em;
+    vertical-align: -.4em;
+    color: #7a7a7a;
+}
+
+.quote::after {
+    content: close-quote;
+    font-size: 3em;
+    line-height: .1em;
+    vertical-align: -.4em;
+    color: #7a7a7a;
+}
